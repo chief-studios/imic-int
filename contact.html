@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Contact IMIC International Organization — reach out for partnership, volunteering, or general inquiries." />
+  <title>IMIC | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+      <a href="index.html"><img src="./logo-full-colour.png" alt="IMIC Logo"></a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="programs.html">Programs</a>
+      <a href="impact.html">Impact</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About Us</a>
+      <a href="donate.html" class="donate-nav">Donate</a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero" style="background-image: linear-gradient(135deg, rgba(15,38,41,0.75) 0%, rgba(21,88,86,0.85) 100%), url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg');">
+    <div class="container hero-grid" data-reveal>
+      <div class="hero-content">
+        <div class="badge">Get in touch</div>
+        <h1>Contact IMIC</h1>
+        <p>Whether you want to volunteer, partner, or learn more, we are ready to listen and collaborate.</p>
+        <div class="hero-buttons">
+          <a href="mailto:imicinternationalorganization@gmail.com" class="btn">Email Us <i class="fas fa-envelope"></i></a>
+          <a href="donate.html" class="btn btn-outline" style="background: rgba(255,255,255,0.15); border-color: white; color: white;">Donate</a>
+        </div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-number">+233</div>
+        <div class="stat-label">Contact line</div>
+        <div class="stat-desc">Reach us for partnership, support, and volunteer coordination.</div>
+      </div>
+    </div>
+  </section>
+  <section class="section approach">
+    <div class="container" data-reveal>
+      <div class="badge">Reach us</div>
+      <h2 class="section-title">Contact Information</h2>
+      <p class="section-sub">We’re happy to answer questions, discuss partnerships, and coordinate support.</p>
+      <div class="approach-grid">
+        <div class="approach-card"><i class="fas fa-map-marker-alt"></i><h3>Office</h3><p>GA-482-7099, Mempeasem, Ghana</p></div>
+        <div class="approach-card"><i class="fas fa-phone-alt"></i><h3>Phone</h3><p>+233 24 029 8271<br>+233 24 499 4544</p></div>
+        <div class="approach-card"><i class="fas fa-envelope"></i><h3>Email</h3><p>imicinternationalorganization@gmail.com</p></div>
+        <div class="approach-card"><i class="fas fa-clock"></i><h3>Office hours</h3><p>Mon–Fri, 9:00 AM – 5:00 PM GMT</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section programs">
+    <div class="container" data-reveal>
+      <div class="badge">Send a message</div>
+      <h2 class="section-title">Reach Out Directly</h2>
+      <p class="section-sub">Fill out the form below and our team will respond shortly.</p>
+      <div class="contact-form" style="max-width: 900px; margin: 0 auto; display: grid; gap: 20px;">
+        <input type="text" placeholder="Your name" aria-label="Your name">
+        <input type="email" placeholder="Your email" aria-label="Your email">
+        <input type="text" placeholder="Subject" aria-label="Subject">
+        <textarea rows="6" placeholder="Your message"></textarea>
+        <button class="btn">Send Message</button>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid-modern">
+      <div class="footer-brand">
+        <img src="./logo-white.png" alt="IMIC Logo">
+        <p>Empowering individuals and families to achieve lasting independence through education, skills training, and community support.</p>
+      </div>
+      <div class="footer-col"><h4>Organization</h4><a href="about.html">About Us</a><a href="impact.html">Our Mission</a><a href="index.html">Annual Reports</a><a href="contact.html">Careers</a></div>
+      <div class="footer-col"><h4>Programs</h4><a href="programs.html">Educational Support</a><a href="programs.html">Community Relief</a><a href="programs.html">Healthcare Support</a><a href="programs.html">Youth Empowerment</a></div>
+      <div class="footer-col"><h4>Get Involved</h4><a href="donate.html">Donate</a><a href="contact.html">Volunteer</a><a href="contact.html">Partner With Us</a><a href="donate.html">Events</a></div>
+      <div class="footer-newsletter"><h4>Stay Connected</h4><p>Subscribe for updates and impact stories.</p><div class="newsletter-form"><input type="email" placeholder="Enter your email" id="newsEmail"><button id="subscribeBtn">Subscribe</button></div></div>
+    </div>
+    <div class="footer-bottom"><div>© <span id="year"></span> IMIC International Organization. All rights reserved.</div></div>
+  </div>
+</footer>
+<script src="./script.js"></script>
+</body>
+</html>

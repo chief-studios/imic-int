@@ -9,7 +9,7 @@
     navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('show')));
   }
 
-  // smooth scroll
+  // smooth scroll for same-page anchors
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       const href = this.getAttribute('href');
@@ -87,15 +87,17 @@
 
   // carousel
   const imageUrls = [
-    "https://images.pexels.com/photos/17503769/pexels-photo-17503769.jpeg",
-    "https://images.pexels.com/photos/27254264/pexels-photo-27254264.jpeg",
-    "https://images.pexels.com/photos/15189552/pexels-photo-15189552.jpeg",
-    "https://images.pexels.com/photos/30565067/pexels-photo-30565067.jpeg",
-    "https://images.pexels.com/photos/17848919/pexels-photo-17848919.jpeg",
-    "https://images.pexels.com/photos/20527519/pexels-photo-20527519.jpeg",
-    "https://images.pexels.com/photos/6284844/pexels-photo-6284844.jpeg",
-    "https://images.pexels.com/photos/16364307/pexels-photo-16364307.jpeg",
-    "https://images.pexels.com/photos/36729916/pexels-photo-36729916.jpeg"
+    "https://images.pexels.com/photos/17503769/pexels-photo-17503769.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "https://images.pexels.com/photos/27254264/pexels-photo-27254264.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "https://images.pexels.com/photos/15189552/pexels-photo-15189552.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "https://images.pexels.com/photos/30565067/pexels-photo-30565067.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "https://images.pexels.com/photos/17848919/pexels-photo-17848919.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "https://images.pexels.com/photos/20527519/pexels-photo-20527519.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "https://images.pexels.com/photos/6284844/pexels-photo-6284844.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "https://images.pexels.com/photos/16364307/pexels-photo-16364307.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "https://images.pexels.com/photos/36729916/pexels-photo-36729916.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "./opt-WhatsApp_Image_2026-06-30_at_9.41.59_AM.jpeg",
+    "./opt-WhatsApp_Image_2026-06-30_at_9.42.00_AM.jpeg"
   ];
   const track = document.getElementById('carouselTrack');
   const prevBtn = document.getElementById('prevCarouselBtn');
@@ -118,6 +120,7 @@
       img.src = url;
       img.alt = `Community ${idx+1}`;
       img.loading = 'lazy';
+      img.decoding = 'async';
       slide.appendChild(img);
       track.appendChild(slide);
     });
@@ -133,17 +136,21 @@
     updateDotsActive();
   }
 
+  function getPageCount() {
+    const maxIndex = Math.max(0, totalSlides - slidesPerView);
+    return Math.max(1, Math.ceil((totalSlides - slidesPerView) / slidesPerView) + 1);
+  }
+
   function updateDots() {
-    const pageCount = Math.ceil(totalSlides / slidesPerView);
+    const pageCount = getPageCount();
+    const maxIndex = Math.max(0, totalSlides - slidesPerView);
     dotsContainer.innerHTML = '';
     for (let i = 0; i < pageCount; i++) {
       const dot = document.createElement('div');
       dot.classList.add('dot');
       if (i === getCurrentPage()) dot.classList.add('active');
       dot.addEventListener('click', () => {
-        currentIndex = i * slidesPerView;
-        if (currentIndex >= totalSlides) currentIndex = totalSlides - slidesPerView;
-        if (currentIndex < 0) currentIndex = 0;
+        currentIndex = Math.min(i * slidesPerView, maxIndex);
         updateTransform();
       });
       dotsContainer.appendChild(dot);
@@ -159,20 +166,30 @@
     });
   }
 
-  function getCurrentPage() { return Math.floor(currentIndex / slidesPerView); }
+  function getCurrentPage() {
+    const pageCount = getPageCount();
+    const maxIndex = Math.max(0, totalSlides - slidesPerView);
+    if (currentIndex >= maxIndex) return pageCount - 1;
+    return Math.floor(currentIndex / slidesPerView);
+  }
 
   function nextSlide() {
-    const maxIndex = totalSlides - slidesPerView;
-    if (currentIndex + slidesPerView < totalSlides) currentIndex += slidesPerView;
-    else if (currentIndex < maxIndex) currentIndex = maxIndex;
-    else currentIndex = 0;
+    const maxIndex = Math.max(0, totalSlides - slidesPerView);
+    if (currentIndex >= maxIndex) {
+      currentIndex = 0;
+    } else {
+      currentIndex = Math.min(currentIndex + slidesPerView, maxIndex);
+    }
     updateTransform();
   }
 
   function prevSlide() {
-    if (currentIndex - slidesPerView >= 0) currentIndex -= slidesPerView;
-    else if (currentIndex > 0) currentIndex = 0;
-    else currentIndex = totalSlides - slidesPerView;
+    const maxIndex = Math.max(0, totalSlides - slidesPerView);
+    if (currentIndex <= 0) {
+      currentIndex = maxIndex;
+    } else {
+      currentIndex = Math.max(0, currentIndex - slidesPerView);
+    }
     updateTransform();
   }
 

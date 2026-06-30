@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Donate to IMIC International Organization — support sustainable community programs and families in need." />
+  <title>IMIC | Donate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+      <a href="index.html"><img src="./logo-full-colour.png" alt="IMIC Logo"></a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="programs.html">Programs</a>
+      <a href="impact.html">Impact</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About Us</a>
+      <a href="donate.html" class="donate-nav">Donate</a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero" style="background-image: linear-gradient(135deg, rgba(15,38,41,0.75) 0%, rgba(21,88,86,0.85) 100%), url('https://images.pexels.com/photos/5933094/pexels-photo-5933094.jpeg');">
+    <div class="container hero-grid" data-reveal>
+      <div class="hero-content">
+        <div class="badge">Donate</div>
+        <h1>Support Sustainable Impact</h1>
+        <p>Your gifts help families access education, health services, and livelihood opportunities.</p>
+        <div class="hero-buttons">
+          <a href="contact.html" class="btn">Speak to Us <i class="fas fa-arrow-right"></i></a>
+          <a href="programs.html" class="btn btn-outline" style="background: rgba(255,255,255,0.15); border-color: white; color: white;">View Programs</a>
+        </div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-number">$</div>
+        <div class="stat-label">Every donation counts</div>
+        <div class="stat-desc">Help us keep services available for communities in need.</div>
+      </div>
+    </div>
+  </section>
+  <section class="section approach">
+    <div class="container" data-reveal>
+      <div class="badge">Ways to give</div>
+      <h2 class="section-title">Your support makes a direct difference</h2>
+      <p class="section-sub">Choose the way that works best for you—one-time gifts, monthly support, or in-kind donations.</p>
+      <div class="approach-grid">
+        <div class="approach-card"><i class="fas fa-hand-holding-usd"></i><h3>One-Time Gift</h3><p>Fund immediate needs and urgent community priorities.</p></div>
+        <div class="approach-card"><i class="fas fa-sync-alt"></i><h3>Monthly Support</h3><p>Create stable, predictable support for our local initiatives.</p></div>
+        <div class="approach-card"><i class="fas fa-box-open"></i><h3>In-Kind Giving</h3><p>Donate supplies, tools, or training materials where they are needed most.</p></div>
+        <div class="approach-card"><i class="fas fa-hands-helping"></i><h3>Volunteer</h3><p>Share your time, skills, or mentorship with our programs.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section programs">
+    <div class="container" data-reveal>
+      <div class="badge">Donate today</div>
+      <h2 class="section-title">Make a Gift</h2>
+      <p class="section-sub">Contact us to arrange your donation or to learn how your support will be used.</p>
+      <div class="contact-form" style="max-width: 900px; margin: 0 auto; display: grid; gap: 20px;">
+        <input type="text" placeholder="Your name" aria-label="Your name">
+        <input type="email" placeholder="Your email" aria-label="Your email">
+        <input type="text" placeholder="Donation type" aria-label="Donation type">
+        <textarea rows="6" placeholder="Tell us how you'd like to support IMIC"></textarea>
+        <button class="btn">Submit Donation Inquiry</button>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid-modern">
+      <div class="footer-brand">
+        <img src="./logo-white.png" alt="IMIC Logo">
+        <p>Empowering individuals and families to achieve lasting independence through education, skills training, and community support.</p>
+      </div>
+      <div class="footer-col"><h4>Organization</h4><a href="about.html">About Us</a><a href="impact.html">Our Mission</a><a href="index.html">Annual Reports</a><a href="contact.html">Careers</a></div>
+      <div class="footer-col"><h4>Programs</h4><a href="programs.html">Educational Support</a><a href="programs.html">Community Relief</a><a href="programs.html">Healthcare Support</a><a href="programs.html">Youth Empowerment</a></div>
+      <div class="footer-col"><h4>Get Involved</h4><a href="donate.html">Donate</a><a href="contact.html">Volunteer</a><a href="contact.html">Partner With Us</a><a href="donate.html">Events</a></div>
+      <div class="footer-newsletter"><h4>Stay Connected</h4><p>Subscribe for updates and impact stories.</p><div class="newsletter-form"><input type="email" placeholder="Enter your email" id="newsEmail"><button id="subscribeBtn">Subscribe</button></div></div>
+    </div>
+    <div class="footer-bottom"><div>© <span id="year"></span> IMIC International Organization. All rights reserved.</div></div>
+  </div>
+</footer>
+<script src="./script.js"></script>
+</body>
+</html>
