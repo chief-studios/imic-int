@@ -87,6 +87,8 @@
 
   // carousel
   const imageUrls = [
+    "./opt-WhatsApp_Image_2026-06-30_at_9.41.59_AM.jpeg",
+    "./opt-WhatsApp_Image_2026-06-30_at_9.42.00_AM.jpeg",
     "https://images.pexels.com/photos/17503769/pexels-photo-17503769.jpeg?auto=compress&cs=tinysrgb&w=900",
     "https://images.pexels.com/photos/27254264/pexels-photo-27254264.jpeg?auto=compress&cs=tinysrgb&w=900",
     "https://images.pexels.com/photos/15189552/pexels-photo-15189552.jpeg?auto=compress&cs=tinysrgb&w=900",
@@ -95,9 +97,7 @@
     "https://images.pexels.com/photos/20527519/pexels-photo-20527519.jpeg?auto=compress&cs=tinysrgb&w=900",
     "https://images.pexels.com/photos/6284844/pexels-photo-6284844.jpeg?auto=compress&cs=tinysrgb&w=900",
     "https://images.pexels.com/photos/16364307/pexels-photo-16364307.jpeg?auto=compress&cs=tinysrgb&w=900",
-    "https://images.pexels.com/photos/36729916/pexels-photo-36729916.jpeg?auto=compress&cs=tinysrgb&w=900",
-    "./opt-WhatsApp_Image_2026-06-30_at_9.41.59_AM.jpeg",
-    "./opt-WhatsApp_Image_2026-06-30_at_9.42.00_AM.jpeg"
+    "https://images.pexels.com/photos/36729916/pexels-photo-36729916.jpeg?auto=compress&cs=tinysrgb&w=900"
   ];
   const track = document.getElementById('carouselTrack');
   const prevBtn = document.getElementById('prevCarouselBtn');

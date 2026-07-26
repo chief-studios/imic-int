@@ -205,7 +205,7 @@ h1, h2, h3, .serif-heading {
 
 /* ----- HERO ----- */
 .hero {
-  background: linear-gradient(135deg, rgba(15,38,41,0.65) 0%, rgba(21,88,86,0.75) 100%), url('https://images.pexels.com/photos/30415852/pexels-photo-30415852.jpeg');
+  background: linear-gradient(135deg, rgba(15,38,41,0.65) 0%, rgba(21,88,86,0.75) 100%), url('https://images.pexels.com/photos/34412342/pexels-photo-34412342.jpeg');
   background-size: cover;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -333,6 +333,10 @@ h1, h2, h3, .serif-heading {
   z-index: 0;
 }
 
+i.fas{
+  color: var(--accent-dark);
+}
+
 .wave-divider {
   position: absolute;
   bottom: 0;
@@ -388,6 +392,10 @@ h1, h2, h3, .serif-heading {
   background: radial-gradient(circle, rgba(31,110,107,0.02) 0%, transparent 70%);
   border-radius: 50%;
   z-index: 0;
+}
+
+#programs h3{
+  color: #1694a1;
 }
 
 /* gallery section soft brush stroke */
