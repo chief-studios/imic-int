@@ -397,11 +397,11 @@
   const carouselSlides = [
     {
       src: 'https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      alt: 'IMIC volunteers distributing supplies to families in Mempeasem',
+      alt: 'IMIC volunteers distributing supplies to families in Julikart, Gbawe',
       tag: 'Community Relief',
       title: 'Standing with families in need',
       impact: 'Coordinated relief reaches households facing sudden hardship — delivered with dignity and local partners.',
-      location: 'Mempeasem, Ghana',
+      location: 'Julikart, Gbawe, Ghana',
       project: 'Community Relief'
     },
     {

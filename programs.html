@@ -1,189 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="IMIC programs — education, health, and livelihood initiatives that support families and communities across Ghana." />
+  <meta name="description"
+    content="IMIC programs — education, health, and livelihood initiatives that support families and communities across Ghana." />
   <title>IMIC | Programs</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
 
-<a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<header class="navbar" role="banner">
-  <div class="container nav-container">
-    <div class="logo">
-      <a href="index.html" aria-label="IMIC International — Home">
-        <img src="./logo-full-colour.png" alt="IMIC International Organization" width="180" height="48">
-      </a>
+  <header class="navbar" role="banner">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html" aria-label="IMIC International — Home">
+          <img src="./logo-full-colour.png" alt="IMIC International Organization" width="180" height="48">
+        </a>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Open menu" aria-controls="navLinks"
+        aria-expanded="false">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav class="nav-links" id="navLinks" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="impact.html">Impact</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About Us</a>
+        <a href="donate.html" class="donate-nav">Donate</a>
+      </nav>
     </div>
-    <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">
-      <i class="fas fa-bars" aria-hidden="true"></i>
-    </button>
-    <nav class="nav-links" id="navLinks" role="navigation" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="programs.html">Programs</a>
-      <a href="impact.html">Impact</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About Us</a>
-      <a href="donate.html" class="donate-nav">Donate</a>
-    </nav>
-  </div>
-</header>
+  </header>
 
-<main id="main-content">
-  <section class="hero hero--programs" aria-labelledby="hero-heading">
-    <div class="container hero-grid" data-reveal>
-      <div class="hero-content">
-        <div class="badge">Our work</div>
-        <h1 id="hero-heading">Programs That Create Lasting Change</h1>
-        <p class="hero-lead">Explore the IMIC initiatives that help children learn, families stay healthy, and communities thrive across Ghana.</p>
-        <div class="hero-buttons">
-          <a href="donate.html" class="btn btn-lg">Sponsor a Child <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-          <a href="contact.html" class="btn btn-outline-light btn-lg">Partner With IMIC</a>
+  <main id="main-content">
+    <section class="hero hero--programs" aria-labelledby="hero-heading">
+      <div class="container hero-grid" data-reveal>
+        <div class="hero-content">
+          <div class="badge">Our work</div>
+          <h1 id="hero-heading">Programs That Create Lasting Change</h1>
+          <p class="hero-lead">Explore the IMIC initiatives that help children learn, families stay healthy, and
+            communities thrive across Ghana.</p>
+          <div class="hero-buttons">
+            <a href="donate.html" class="btn btn-lg">Sponsor a Child <i class="fas fa-arrow-right"
+                aria-hidden="true"></i></a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg">Partner With IMIC</a>
+          </div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-number counter" data-target="8" data-suffix="">0</div>
+          <div class="stat-label">Program areas</div>
+          <div class="stat-desc">Focused sectors that support sustainable progress.</div>
         </div>
       </div>
-      <div class="hero-stat">
-        <div class="stat-number counter" data-target="8" data-suffix="">0</div>
-        <div class="stat-label">Program areas</div>
-        <div class="stat-desc">Focused sectors that support sustainable progress.</div>
+    </section>
+
+    <section class="section programs" aria-labelledby="programs-heading">
+      <div class="container" data-reveal>
+        <div class="section-header">
+          <div class="badge">Key initiatives</div>
+          <h2 id="programs-heading" class="section-title">What We Deliver</h2>
+          <p class="section-sub">Four strategic pillars guide our work — each bringing together focused initiatives
+            designed with local partners.</p>
+        </div>
+        <div class="program-pillars">
+          <article class="program-pillar">
+            <header class="pillar-header">
+              <span class="pillar-badge">Pillar 01</span>
+              <div class="pillar-icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
+              <h3 class="pillar-title">Education &amp; Youth</h3>
+              <p class="pillar-summary">Opening doors for learners and young leaders through scholarships, mentorship,
+                and skills development.</p>
+            </header>
+            <ul class="pillar-initiatives">
+              <li class="initiative-card">
+                <h4>Educational Support</h4>
+                <p>Scholarships, learning kits, and after-school coaching to keep learners in school.</p>
+                <a href="donate.html" class="program-link">Sponsor a learner <span aria-hidden="true">→</span></a>
+              </li>
+              <li class="initiative-card">
+                <h4>Youth Empowerment</h4>
+                <p>Leadership, mentorship, and practical skills training for young changemakers.</p>
+                <a href="contact.html" class="program-link">Volunteer with youth <span aria-hidden="true">→</span></a>
+              </li>
+              <li class="initiative-card">
+                <h4>Mentorship &amp; Coaching</h4>
+                <p>One-on-one guidance that builds steady progress, confidence, and resilience.</p>
+                <a href="contact.html" class="program-link">Become a mentor <span aria-hidden="true">→</span></a>
+              </li>
+            </ul>
+          </article>
+
+          <article class="program-pillar">
+            <header class="pillar-header">
+              <span class="pillar-badge">Pillar 02</span>
+              <div class="pillar-icon" aria-hidden="true"><i class="fas fa-hospital-user"></i></div>
+              <h3 class="pillar-title">Community Health</h3>
+              <p class="pillar-summary">IMIC International Organisation is committed to improving access to essential
+                healthcare and supporting vulnerable individuals and families across Ghana.</p>
+            </header>
+            <ul class="pillar-initiatives">
+              <li class="initiative-card">
+                <h4>Hospital &amp; Medical Bill Payments</h4>
+                <p>Direct payment of hospital and medical bills for vulnerable individuals and families facing financial
+                  hardship.</p>
+                <a href="donate.html" class="program-link">Sponsor medical bills <span aria-hidden="true">→</span></a>
+              </li>
+              <li class="initiative-card">
+                <h4>Medications &amp; Medical Supplies</h4>
+                <p>Provision of essential medications, urgent prescriptions, and vital medical supplies for patients in
+                  need.</p>
+                <a href="donate.html" class="program-link">Fund medications <span aria-hidden="true">→</span></a>
+              </li>
+              <li class="initiative-card">
+                <h4>Treatment &amp; Recovery Support</h4>
+                <p>Financial assistance to support medical treatment, surgical recovery, and healthcare access with
+                  dignity.</p>
+                <a href="contact.html" class="program-link">Learn about healthcare support <span
+                    aria-hidden="true">→</span></a>
+              </li>
+            </ul>
+          </article>
+
+          <!-- HEALTHCARE FINANCIAL ASSISTANCE SPOTLIGHT -->
+          <div class="healthcare-spotlight-card">
+            <div class="healthcare-spotlight-badge"><i class="fas fa-heartbeat"></i> Healthcare Relief &amp; Medical
+              Bill Assistance</div>
+            <h3 class="healthcare-spotlight-title">Improving Access to Essential Healthcare Across Ghana</h3>
+            <p class="healthcare-spotlight-body">IMIC International Organisation is committed to improving access to
+              essential healthcare and supporting vulnerable individuals and families across Ghana. Through our
+              healthcare support initiatives, we provide assistance to people who face financial difficulties in
+              accessing medical care.</p>
+            <ul class="healthcare-checklist">
+              <li><i class="fas fa-check-circle"></i> Payment of hospital bills for individuals and families in need
+              </li>
+              <li><i class="fas fa-check-circle"></i> Provision of medications and essential medical supplies</li>
+              <li><i class="fas fa-check-circle"></i> Financial support to assist with medical treatment and recovery
+              </li>
+              <li><i class="fas fa-check-circle"></i> Support for vulnerable individuals who struggle to afford
+                healthcare</li>
+            </ul>
+            <div class="healthcare-spotlight-footer">
+              <p>IMIC International Organisation provides healthcare and financial assistance to many individuals across
+                Ghana, helping to reduce the financial burden of medical care and ensuring that people can access the
+                treatment they need with dignity.</p>
+              <a href="donate.html" class="btn btn-sm">Donate to Healthcare Fund <i class="fas fa-arrow-right"
+                  aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <article class="program-pillar">
+            <header class="pillar-header">
+              <span class="pillar-badge">Pillar 03</span>
+              <div class="pillar-icon" aria-hidden="true"><i class="fas fa-seedling"></i></div>
+              <h3 class="pillar-title">Agriculture &amp; Livelihoods</h3>
+              <p class="pillar-summary">Strengthening economic independence through farming support and women's
+                livelihood programs.</p>
+            </header>
+            <ul class="pillar-initiatives">
+              <li class="initiative-card">
+                <h4>Agricultural Productivity</h4>
+                <p>Inputs, modern farming techniques, and income improvement for smallholder farming families.</p>
+                <a href="donate.html" class="program-link">Support a farmer <span aria-hidden="true">→</span></a>
+              </li>
+              <li class="initiative-card">
+                <h4>Women's Livelihoods</h4>
+                <p>Livelihood workshops, seed funding, and business development for women entrepreneurs.</p>
+                <a href="donate.html" class="program-link">Support women's livelihoods <span
+                    aria-hidden="true">→</span></a>
+              </li>
+            </ul>
+          </article>
+
+          <article class="program-pillar">
+            <header class="pillar-header">
+              <span class="pillar-badge">Pillar 04</span>
+              <div class="pillar-icon" aria-hidden="true"><i class="fas fa-hands-helping"></i></div>
+              <h3 class="pillar-title">Community Development</h3>
+              <p class="pillar-summary">Rapid, coordinated support that helps communities weather hardship and rebuild
+                together.</p>
+            </header>
+            <ul class="pillar-initiatives">
+              <li class="initiative-card">
+                <h4>Community Relief</h4>
+                <p>Rapid emergency support and essential food & care kits for families facing sudden hardship.</p>
+                <a href="contact.html" class="program-link">Volunteer with us <span aria-hidden="true">→</span></a>
+              </li>
+              <li class="initiative-card">
+                <h4>Local Outreach &amp; Mentorship</h4>
+                <p>Mentorship programs and civic projects that build long-term local resilience.</p>
+                <a href="contact.html" class="program-link">Partner with our team <span aria-hidden="true">→</span></a>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section" aria-labelledby="cta-heading">
+      <div class="container cta-box" data-reveal>
+        <div class="badge">Partner with us</div>
+        <h2 id="cta-heading" class="section-title">Help Strengthen Our Programs</h2>
+        <p class="section-sub section-sub--centered">Your support helps us reach more learners, families, and
+          communities with services that matter.</p>
+        <div class="cta-buttons">
+          <a href="donate.html" class="btn btn-lg">Donate Today</a>
+          <a href="contact.html" class="btn btn-outline btn-lg">Volunteer With Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid-modern">
+        <div class="footer-brand">
+          <img src="./logo-white.png" alt="IMIC International Organization" width="180" height="48" loading="lazy">
+          <p>Empowering individuals and families to achieve lasting independence through education, skills training, and
+            community support.</p>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Julikart, Gbawe (Behind the Victory Baptist
+              Church)</p>
+            <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+233543123416">+233 543 123 416</a></p>
+            <p><i class="fas fa-envelope" aria-hidden="true"></i> <a
+                href="mailto:imicinternationalorganization@gmail.com">imicinternationalorganization@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Organization</h4><a href="about.html">About Us</a><a href="impact.html">Our Impact</a><a
+            href="about.html">Our Mission</a><a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4><a href="programs.html">Educational Support</a><a href="programs.html">Community Relief</a><a
+            href="programs.html">Healthcare Support</a><a href="programs.html">Youth Empowerment</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get Involved</h4><a href="donate.html">Donate</a><a href="contact.html">Volunteer With Us</a><a
+            href="contact.html">Partner With IMIC</a><a href="donate.html">Support a Community</a>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Connected</h4>
+          <p>Subscribe for updates and impact stories.</p>
+          <div class="newsletter-form"><label for="newsEmail" class="sr-only">Email address</label><input type="email"
+              id="newsEmail" placeholder="Enter your email" autocomplete="email" required><button type="button"
+              id="subscribeBtn">Subscribe</button></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© <span id="year"></span> IMIC International Organization. All rights reserved.</div>
       </div>
     </div>
-  </section>
-
-  <section class="section programs" aria-labelledby="programs-heading">
-    <div class="container" data-reveal>
-      <div class="section-header">
-        <div class="badge">Key initiatives</div>
-        <h2 id="programs-heading" class="section-title">What We Deliver</h2>
-        <p class="section-sub">Four strategic pillars guide our work — each bringing together focused initiatives designed with local partners.</p>
-      </div>
-      <div class="program-pillars">
-        <article class="program-pillar">
-          <header class="pillar-header">
-            <span class="pillar-badge">Pillar 01</span>
-            <div class="pillar-icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
-            <h3 class="pillar-title">Education &amp; Youth</h3>
-            <p class="pillar-summary">Opening doors for learners and young leaders through scholarships, mentorship, and skills development.</p>
-          </header>
-          <ul class="pillar-initiatives">
-            <li class="initiative-card">
-              <h4>Educational Support</h4>
-              <p>Scholarships, learning kits, and after-school coaching to keep learners in school.</p>
-              <a href="donate.html" class="program-link">Sponsor a learner <span aria-hidden="true">→</span></a>
-            </li>
-            <li class="initiative-card">
-              <h4>Youth Empowerment</h4>
-              <p>Leadership, mentorship, and practical skills training for young changemakers.</p>
-              <a href="contact.html" class="program-link">Volunteer with youth <span aria-hidden="true">→</span></a>
-            </li>
-            <li class="initiative-card">
-              <h4>Mentorship &amp; Coaching</h4>
-              <p>One-on-one guidance that builds steady progress, confidence, and resilience.</p>
-              <a href="contact.html" class="program-link">Become a mentor <span aria-hidden="true">→</span></a>
-            </li>
-          </ul>
-        </article>
-
-        <article class="program-pillar">
-          <header class="pillar-header">
-            <span class="pillar-badge">Pillar 02</span>
-            <div class="pillar-icon" aria-hidden="true"><i class="fas fa-hospital-user"></i></div>
-            <h3 class="pillar-title">Community Health</h3>
-            <p class="pillar-summary">Ensuring families can access care, wellness support, and inclusive services when they need them most.</p>
-          </header>
-          <ul class="pillar-initiatives">
-            <li class="initiative-card">
-              <h4>Healthcare Support</h4>
-              <p>Health screenings, basic care access, medical referrals, and urgent family health assistance.</p>
-              <a href="contact.html" class="program-link">Learn about health programs <span aria-hidden="true">→</span></a>
-            </li>
-            <li class="initiative-card">
-              <h4>Disability Inclusion</h4>
-              <p>Inclusion-focused support pathways, adaptive equipment, and community access.</p>
-              <a href="contact.html" class="program-link">Learn about inclusion services <span aria-hidden="true">→</span></a>
-            </li>
-          </ul>
-        </article>
-
-        <article class="program-pillar">
-          <header class="pillar-header">
-            <span class="pillar-badge">Pillar 03</span>
-            <div class="pillar-icon" aria-hidden="true"><i class="fas fa-seedling"></i></div>
-            <h3 class="pillar-title">Agriculture &amp; Livelihoods</h3>
-            <p class="pillar-summary">Strengthening economic independence through farming support and women's livelihood programs.</p>
-          </header>
-          <ul class="pillar-initiatives">
-            <li class="initiative-card">
-              <h4>Agricultural Productivity</h4>
-              <p>Inputs, modern farming techniques, and income improvement for smallholder farming families.</p>
-              <a href="donate.html" class="program-link">Support a farmer <span aria-hidden="true">→</span></a>
-            </li>
-            <li class="initiative-card">
-              <h4>Women's Livelihoods</h4>
-              <p>Livelihood workshops, seed funding, and business development for women entrepreneurs.</p>
-              <a href="donate.html" class="program-link">Support women's livelihoods <span aria-hidden="true">→</span></a>
-            </li>
-          </ul>
-        </article>
-
-        <article class="program-pillar">
-          <header class="pillar-header">
-            <span class="pillar-badge">Pillar 04</span>
-            <div class="pillar-icon" aria-hidden="true"><i class="fas fa-hands-helping"></i></div>
-            <h3 class="pillar-title">Community Development</h3>
-            <p class="pillar-summary">Rapid, coordinated support that helps communities weather hardship and rebuild together.</p>
-          </header>
-          <ul class="pillar-initiatives">
-            <li class="initiative-card">
-              <h4>Community Relief</h4>
-              <p>Rapid emergency support and essential food & care kits for families facing sudden hardship.</p>
-              <a href="contact.html" class="program-link">Volunteer with us <span aria-hidden="true">→</span></a>
-            </li>
-            <li class="initiative-card">
-              <h4>Local Outreach &amp; Mentorship</h4>
-              <p>Mentorship programs and civic projects that build long-term local resilience.</p>
-              <a href="contact.html" class="program-link">Partner with our team <span aria-hidden="true">→</span></a>
-            </li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section cta-section" aria-labelledby="cta-heading">
-    <div class="container cta-box" data-reveal>
-      <div class="badge">Partner with us</div>
-      <h2 id="cta-heading" class="section-title">Help Strengthen Our Programs</h2>
-      <p class="section-sub section-sub--centered">Your support helps us reach more learners, families, and communities with services that matter.</p>
-      <div class="cta-buttons">
-        <a href="donate.html" class="btn btn-lg">Donate Today</a>
-        <a href="contact.html" class="btn btn-outline btn-lg">Volunteer With Us</a>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer" role="contentinfo">
-  <div class="container">
-    <div class="footer-grid-modern">
-      <div class="footer-brand">
-        <img src="./logo-white.png" alt="IMIC International Organization" width="180" height="48" loading="lazy">
-        <p>Empowering individuals and families to achieve lasting independence through education, skills training, and community support.</p>
-      </div>
-      <div class="footer-col"><h4>Organization</h4><a href="about.html">About Us</a><a href="impact.html">Our Impact</a><a href="about.html">Our Mission</a><a href="contact.html">Contact Us</a></div>
-      <div class="footer-col"><h4>Programs</h4><a href="programs.html">Educational Support</a><a href="programs.html">Community Relief</a><a href="programs.html">Healthcare Support</a><a href="programs.html">Youth Empowerment</a></div>
-      <div class="footer-col"><h4>Get Involved</h4><a href="donate.html">Donate</a><a href="contact.html">Volunteer With Us</a><a href="contact.html">Partner With IMIC</a><a href="donate.html">Support a Community</a></div>
-      <div class="footer-newsletter"><h4>Stay Connected</h4><p>Subscribe for updates and impact stories.</p><div class="newsletter-form"><label for="newsEmail" class="sr-only">Email address</label><input type="email" id="newsEmail" placeholder="Enter your email" autocomplete="email" required><button type="button" id="subscribeBtn">Subscribe</button></div></div>
-    </div>
-    <div class="footer-bottom"><div>© <span id="year"></span> IMIC International Organization. All rights reserved.</div></div>
-  </div>
-</footer>
-<script src="./script.js" defer></script>
+  </footer>
+  <script src="./script.js" defer></script>
 </body>
+
 </html>

@@ -1,321 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="Donate to IMIC International Organization — support sustainable community programs, education, healthcare, and families in need in Ghana." />
+  <meta name="description"
+    content="Donate to IMIC International Organization — support sustainable community programs, education, healthcare, and families in need in Ghana." />
   <title>IMIC | Donate & Support</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-<header class="navbar">
-  <div class="container nav-container">
-    <div class="logo">
-      <a href="index.html"><img src="./logo-full-colour.png" alt="IMIC Logo"></a>
-    </div>
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
-    <div class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="programs.html">Programs</a>
-      <a href="impact.html">Impact</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About Us</a>
-      <a href="donate.html" class="donate-nav">Donate</a>
-    </div>
-  </div>
-</header>
-<main>
-  <!-- HERO -->
-  <section class="hero hero--donate">
-    <div class="container hero-grid" data-reveal>
-      <div class="hero-content">
-        <div class="badge">Donate & Give</div>
-        <h1>Support Sustainable Impact</h1>
-        <p>Your generous gifts empower communities, keep children in school, and provide life-changing resources for families across Ghana.</p>
-        <div class="hero-buttons">
-          <a href="#direct-donation" class="btn btn-lg">Bank Details <i class="fas fa-university" aria-hidden="true"></i></a>
-          <a href="#donate-form" class="btn btn-outline-light btn-lg">Inquire / Donate Online</a>
-        </div>
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html"><img src="./logo-full-colour.png" alt="IMIC Logo"></a>
       </div>
-      <div class="hero-stat">
-        <div class="stat-number">100%</div>
-        <div class="stat-label">Direct Community Reach</div>
-        <div class="stat-desc">Every donation directly funds community relief, youth education, and family support programs.</div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="impact.html">Impact</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About Us</a>
+        <a href="donate.html" class="donate-nav">Donate</a>
       </div>
     </div>
-  </section>
-
-  <!-- DIRECT DONATION DETAILS SECTION -->
-  <section id="direct-donation" class="section approach">
-    <div class="container" data-reveal>
-      <div class="badge">Direct Transfer Details</div>
-      <h2 class="section-title">Ways to Donate Directly</h2>
-      <p class="section-sub">You can send your support directly via bank transfer, mobile payment, or visit our local administrative office.</p>
-
-      <div class="donation-details-grid">
-        <!-- Bank Card -->
-        <div class="donate-detail-card donate-detail-card--highlight">
-          <div class="donate-card-header">
-            <div class="donate-card-icon">
-              <i class="fas fa-university"></i>
-            </div>
-            <div class="donate-card-title">
-              <span>Primary Account</span>
-              <h3>Bank Account</h3>
-            </div>
-          </div>
-          <div class="donate-card-body">
-            <div class="detail-row">
-              <span class="detail-label">Account Name</span>
-              <span class="detail-value">IMIC International Organization LBG</span>
-            </div>
-            <div class="detail-row">
-              <span class="detail-label">Bank</span>
-              <span class="detail-value">ECOBANK</span>
-            </div>
-            <div class="detail-row">
-              <span class="detail-label">Account Number</span>
-              <span class="detail-value detail-value--highlight" id="accNumber">1441004897107</span>
-            </div>
-            <div class="detail-row">
-              <span class="detail-label">Branch</span>
-              <span class="detail-value">ABEKA BRANCH</span>
-            </div>
-          </div>
-          <div class="donate-card-actions">
-            <button type="button" class="btn-copy" id="copyBankBtn" data-copy="1441004897107">
-              <i class="far fa-copy"></i> Copy Account Number
-            </button>
+  </header>
+  <main>
+    <!-- HERO -->
+    <section class="hero hero--donate">
+      <div class="container hero-grid" data-reveal>
+        <div class="hero-content">
+          <div class="badge">Donate & Give</div>
+          <h1>Support Sustainable Impact</h1>
+          <p class="hero-lead">Your generous gifts empower communities, keep children in school, and provide
+            life-changing resources for families across Ghana.</p>
+          <div class="hero-buttons">
+            <a href="#direct-donation" class="btn btn-lg">Bank Details <i class="fas fa-university"
+                aria-hidden="true"></i></a>
+            <a href="#donate-form" class="btn btn-outline-light btn-lg">Inquire / Donate Online</a>
           </div>
         </div>
-
-        <!-- Address Card -->
-        <div class="donate-detail-card">
-          <div class="donate-card-header">
-            <div class="donate-card-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="donate-card-title">
-              <span>Office Location</span>
-              <h3>Physical Address</h3>
-            </div>
-          </div>
-          <div class="donate-card-body">
-            <div class="detail-row">
-              <span class="detail-label">Location / Town</span>
-              <span class="detail-value">Julikart, Bawe</span>
-            </div>
-            <div class="detail-row">
-              <span class="detail-label">Landmark</span>
-              <span class="detail-value">Behind the Victory Baptist Church</span>
-            </div>
-            <div class="detail-row" style="margin-top: 4px;">
-              <span class="detail-label">Country</span>
-              <span class="detail-value">Ghana</span>
-            </div>
-          </div>
-          <div class="donate-card-actions">
-            <button type="button" class="btn-copy" id="copyAddrBtn" data-copy="Julikart, Bawe, Behind the Victory Baptist Church">
-              <i class="far fa-copy"></i> Copy Address
-            </button>
-          </div>
+        <div class="hero-stat">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Direct Community Reach</div>
+          <div class="stat-desc">Every donation directly funds community relief, youth education, and family support
+            programs.</div>
         </div>
+      </div>
+    </section>
 
-        <!-- Phone / Contact Card -->
-        <div class="donate-detail-card">
-          <div class="donate-card-header">
-            <div class="donate-card-icon">
-              <i class="fas fa-phone-alt"></i>
+    <!-- DIRECT DONATION DETAILS SECTION -->
+    <section id="direct-donation" class="section approach">
+      <div class="container" data-reveal>
+        <div class="badge">Direct Transfer Details</div>
+        <h2 class="section-title">Ways to Donate Directly</h2>
+        <p class="section-sub">You can send your support directly via bank transfer, mobile payment, or visit our local
+          administrative office.</p>
+
+        <div class="donation-details-grid">
+          <!-- Bank Card -->
+          <div class="donate-detail-card donate-detail-card--highlight">
+            <div class="donate-card-header">
+              <div class="donate-card-icon">
+                <i class="fas fa-university"></i>
+              </div>
+              <div class="donate-card-title">
+                <span>Primary Account</span>
+                <h3>Bank Account</h3>
+              </div>
             </div>
-            <div class="donate-card-title">
-              <span>Direct Phone & Mobile</span>
-              <h3>Phone & MoMo</h3>
+            <div class="donate-card-body">
+              <div class="detail-row">
+                <span class="detail-label">Account Name</span>
+                <span class="detail-value">IMIC International Organization LBG</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Bank</span>
+                <span class="detail-value">ECOBANK</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Account Number</span>
+                <span class="detail-value detail-value--highlight" id="accNumber">1441004897107</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Branch</span>
+                <span class="detail-value">ABEKA BRANCH</span>
+              </div>
+            </div>
+            <div class="donate-card-actions">
+              <button type="button" class="btn-copy" id="copyBankBtn" data-copy="1441004897107">
+                <i class="far fa-copy"></i> Copy Account Number
+              </button>
             </div>
           </div>
-          <div class="donate-card-body">
-            <div class="detail-row">
-              <span class="detail-label">Phone Line</span>
-              <span class="detail-value detail-value--highlight">+233543123416</span>
+
+          <!-- Address Card -->
+          <div class="donate-detail-card">
+            <div class="donate-card-header">
+              <div class="donate-card-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="donate-card-title">
+                <span>Office Location</span>
+                <h3>Physical Address</h3>
+              </div>
             </div>
-            <div class="detail-row">
-              <span class="detail-label">Availability</span>
-              <span class="detail-value">Mon–Fri, 8:00 AM – 6:00 PM GMT</span>
+            <div class="donate-card-body">
+              <div class="detail-row">
+                <span class="detail-label">Location / Town</span>
+                <span class="detail-value">Julikart, Gbawe</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Landmark</span>
+                <span class="detail-value">Behind the Victory Baptist Church</span>
+              </div>
+              <div class="detail-row" style="margin-top: 4px;">
+                <span class="detail-label">Country</span>
+                <span class="detail-value">Ghana</span>
+              </div>
+            </div>
+            <div class="donate-card-actions">
+              <button type="button" class="btn-copy" id="copyAddrBtn"
+                data-copy="Julikart, Gbawe, Behind the Victory Baptist Church">
+                <i class="far fa-copy"></i> Copy Address
+              </button>
             </div>
           </div>
-          <div class="donate-card-actions">
-            <a href="tel:+233543123416" class="btn btn-sm btn-outline"><i class="fas fa-phone"></i> Call</a>
-            <a href="https://wa.me/233543123416" target="_blank" rel="noopener" class="btn-outline-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            <button type="button" class="btn-copy" id="copyPhoneBtn" data-copy="+233543123416">
-              <i class="far fa-copy"></i> Copy
-            </button>
+
+          <!-- Phone / Contact Card -->
+          <div class="donate-detail-card">
+            <div class="donate-card-header">
+              <div class="donate-card-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="donate-card-title">
+                <span>Direct Phone & Mobile</span>
+                <h3>Phone & MoMo</h3>
+              </div>
+            </div>
+            <div class="donate-card-body">
+              <div class="detail-row">
+                <span class="detail-label">Phone Line</span>
+                <span class="detail-value detail-value--highlight">+233543123416</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Availability</span>
+                <span class="detail-value">Mon–Fri, 8:00 AM – 6:00 PM GMT</span>
+              </div>
+            </div>
+            <div class="donate-card-actions">
+              <a href="tel:+233543123416" class="btn btn-sm btn-outline"><i class="fas fa-phone"></i> Call</a>
+              <a href="https://wa.me/233543123416" target="_blank" rel="noopener" class="btn-outline-whatsapp"><i
+                  class="fab fa-whatsapp"></i> WhatsApp</a>
+              <button type="button" class="btn-copy" id="copyPhoneBtn" data-copy="+233543123416">
+                <i class="far fa-copy"></i> Copy
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- WAYS TO GIVE OVERVIEW -->
-  <section class="section" style="background: var(--bg-soft);">
-    <div class="container" data-reveal>
-      <div class="badge">Ways to give</div>
-      <h2 class="section-title">Your support makes a direct difference</h2>
-      <p class="section-sub">Choose the approach that fits your vision—one-time gifts, recurring monthly support, or in-kind donations.</p>
-      <div class="approach-grid">
-        <div class="approach-card">
-          <div class="card-icon"><i class="fas fa-hand-holding-usd"></i></div>
-          <h3>One-Time Gift</h3>
-          <p>Fund immediate community relief, urgent educational needs, and supply distributions.</p>
-        </div>
-        <div class="approach-card">
-          <div class="card-icon"><i class="fas fa-sync-alt"></i></div>
-          <h3>Monthly Support</h3>
-          <p>Provide reliable, ongoing monthly funding for grassroots programs and local families.</p>
-        </div>
-        <div class="approach-card">
-          <div class="card-icon"><i class="fas fa-box-open"></i></div>
-          <h3>In-Kind Giving</h3>
-          <p>Donate educational kits, medical supplies, tools, or equipment directly to our teams.</p>
-        </div>
-        <div class="approach-card">
-          <div class="card-icon"><i class="fas fa-hands-helping"></i></div>
-          <h3>Volunteer & Partner</h3>
-          <p>Share your professional expertise, mentor local youth, or partner as an institution.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ENHANCED DONATION FORM SECTION -->
-  <section id="donate-form" class="section programs">
-    <div class="container" data-reveal>
-      <div class="badge">Online Inquiry</div>
-      <h2 class="section-title text-center" style="text-align: center;">Donation Inquiry & Pledge</h2>
-      <p class="section-sub section-sub--centered">Fill out the details below to notify our team of your gift or request assistance with making a payment.</p>
-
-      <div class="donate-form-card">
-        <!-- Frequency Selector -->
-        <div class="frequency-toggle-wrapper">
-          <div class="frequency-toggle" id="freqToggle">
-            <button type="button" class="freq-btn active" data-freq="One-Time">One-Time Gift</button>
-            <button type="button" class="freq-btn" data-freq="Monthly">Monthly Support</button>
-            <button type="button" class="freq-btn" data-freq="In-Kind">In-Kind / Partner</button>
+    <!-- WAYS TO GIVE OVERVIEW -->
+    <section class="section" style="background: var(--bg-soft);">
+      <div class="container" data-reveal>
+        <div class="badge">Ways to give</div>
+        <h2 class="section-title">Your support makes a direct difference</h2>
+        <p class="section-sub">Choose the approach that fits your vision—one-time gifts, recurring monthly support, or
+          in-kind donations.</p>
+        <div class="approach-grid">
+          <div class="approach-card">
+            <div class="card-icon"><i class="fas fa-hand-holding-usd"></i></div>
+            <h3>One-Time Gift</h3>
+            <p>Fund immediate community relief, hospital bill clearing, and supply distributions.</p>
+          </div>
+          <div class="approach-card">
+            <div class="card-icon"><i class="fas fa-sync-alt"></i></div>
+            <h3>Monthly Support</h3>
+            <p>Provide reliable, ongoing monthly funding for grassroots programs and local families.</p>
+          </div>
+          <div class="approach-card">
+            <div class="card-icon"><i class="fas fa-box-open"></i></div>
+            <h3>In-Kind Giving</h3>
+            <p>Donate educational kits, medical supplies, tools, or equipment directly to our teams.</p>
+          </div>
+          <div class="approach-card">
+            <div class="card-icon"><i class="fas fa-hands-helping"></i></div>
+            <h3>Volunteer & Partner</h3>
+            <p>Share your professional expertise, mentor local youth, or partner as an institution.</p>
           </div>
         </div>
 
-        <form class="contact-form donate-form" id="donateInquiryForm" data-subject="IMIC Donation Inquiry">
-          <input type="hidden" id="selectedFreq" name="frequency" value="One-Time">
+        <!-- HEALTHCARE FUND HIGHLIGHT CARD -->
+        <div class="healthcare-spotlight-card">
+          <div class="healthcare-spotlight-badge"><i class="fas fa-notes-medical"></i> Healthcare Support Fund</div>
+          <h3 class="healthcare-spotlight-title">Direct Medical &amp; Hospital Bill Assistance</h3>
+          <p class="healthcare-spotlight-body">IMIC International Organisation is committed to improving access to
+            essential healthcare and supporting vulnerable individuals and families across Ghana. Your donations
+            directly power our healthcare support initiatives:</p>
+          <ul class="healthcare-checklist">
+            <li><i class="fas fa-check-circle"></i> <strong>Hospital Bills:</strong> Direct payment of hospital bills
+              for families facing hardship</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Medications:</strong> Provision of essential medications and
+              emergency medical supplies</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Treatment Aid:</strong> Financial support to assist with
+              surgery, care, and recovery</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Dignity &amp; Access:</strong> Reducing financial burdens so
+              vulnerable Ghanaians access treatment with dignity</li>
+          </ul>
+          <div class="healthcare-spotlight-footer">
+            <p>Every contribution helps a patient receive urgent medical care without the crushing weight of debt.</p>
+            <a href="#donate-form" class="btn btn-sm">Donate to Medical Fund <i class="fas fa-arrow-down"
+                aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Preset Amounts -->
-          <div class="form-group">
-            <label class="amount-selector-label">Select a Gift Amount (GHS)</label>
-            <div class="amount-grid" id="amountPills">
-              <button type="button" class="amount-pill" data-amount="50">GH₵ 50</button>
-              <button type="button" class="amount-pill active" data-amount="100">GH₵ 100</button>
-              <button type="button" class="amount-pill" data-amount="250">GH₵ 250</button>
-              <button type="button" class="amount-pill" data-amount="500">GH₵ 500</button>
-              <button type="button" class="amount-pill" data-amount="custom">Custom</button>
+    <!-- ENHANCED DONATION FORM SECTION -->
+    <section id="donate-form" class="section programs">
+      <div class="container" data-reveal>
+        <div class="badge">Online Inquiry</div>
+        <h2 class="section-title text-center" style="text-align: center;">Donation Inquiry & Pledge</h2>
+        <p class="section-sub section-sub--centered">Fill out the details below to notify our team of your gift or
+          request assistance with making a payment.</p>
+
+        <div class="donate-form-card">
+          <!-- Frequency Selector -->
+          <div class="frequency-toggle-wrapper">
+            <div class="frequency-toggle" id="freqToggle">
+              <button type="button" class="freq-btn active" data-freq="One-Time">One-Time Gift</button>
+              <button type="button" class="freq-btn" data-freq="Monthly">Monthly Support</button>
+              <button type="button" class="freq-btn" data-freq="In-Kind">In-Kind / Partner</button>
             </div>
           </div>
 
-          <div class="form-grid-2col">
-            <!-- Full Name -->
+          <form class="contact-form donate-form" id="donateInquiryForm" data-subject="IMIC Donation Inquiry">
+            <input type="hidden" id="selectedFreq" name="frequency" value="One-Time">
+
+            <!-- Preset Amounts -->
             <div class="form-group">
-              <label for="donorName">Full Name *</label>
-              <div class="input-icon-group">
-                <i class="fas fa-user"></i>
-                <input type="text" id="donorName" name="name" placeholder="John Doe" required aria-label="Full Name">
+              <label class="amount-selector-label">Select a Gift Amount (GHS)</label>
+              <div class="amount-grid" id="amountPills">
+                <button type="button" class="amount-pill" data-amount="50">GH₵ 50</button>
+                <button type="button" class="amount-pill active" data-amount="100">GH₵ 100</button>
+                <button type="button" class="amount-pill" data-amount="250">GH₵ 250</button>
+                <button type="button" class="amount-pill" data-amount="500">GH₵ 500</button>
+                <button type="button" class="amount-pill" data-amount="custom">Custom</button>
               </div>
             </div>
 
-            <!-- Email Address -->
-            <div class="form-group">
-              <label for="donorEmail">Email Address *</label>
-              <div class="input-icon-group">
-                <i class="fas fa-envelope"></i>
-                <input type="email" id="donorEmail" name="email" placeholder="john@example.com" required aria-label="Email Address">
+            <div class="form-grid-2col">
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="donorName">Full Name *</label>
+                <div class="input-icon-group">
+                  <i class="fas fa-user"></i>
+                  <input type="text" id="donorName" name="name" placeholder="John Doe" required aria-label="Full Name">
+                </div>
+              </div>
+
+              <!-- Email Address -->
+              <div class="form-group">
+                <label for="donorEmail">Email Address *</label>
+                <div class="input-icon-group">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="donorEmail" name="email" placeholder="john@example.com" required
+                    aria-label="Email Address">
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="form-grid-2col">
-            <!-- Phone Number -->
-            <div class="form-group">
-              <label for="donorPhone">Phone Number / WhatsApp</label>
-              <div class="input-icon-group">
-                <i class="fas fa-phone"></i>
-                <input type="tel" id="donorPhone" name="phone" placeholder="+233 54 123 4567" aria-label="Phone Number">
+            <div class="form-grid-2col">
+              <!-- Phone Number -->
+              <div class="form-group">
+                <label for="donorPhone">Phone Number / WhatsApp</label>
+                <div class="input-icon-group">
+                  <i class="fas fa-phone"></i>
+                  <input type="tel" id="donorPhone" name="phone" placeholder="+233 54 123 4567"
+                    aria-label="Phone Number">
+                </div>
+              </div>
+
+              <!-- Cause / Program -->
+              <div class="form-group">
+                <label for="donorProgram">Direct Gift To</label>
+                <div class="input-icon-group">
+                  <i class="fas fa-heart"></i>
+                  <select id="donorProgram" name="program" aria-label="Direct Gift To">
+                    <option value="General Needs & Urgent Relief">General Needs & Urgent Relief</option>
+                    <option value="Educational Support & Scholarships">Educational Support & Scholarships</option>
+                    <option value="Community Healthcare Services">Community Healthcare Services</option>
+                    <option value="Youth & Women Empowerment">Youth & Women Empowerment</option>
+                  </select>
+                </div>
               </div>
             </div>
 
-            <!-- Cause / Program -->
+            <!-- Specific Amount / Custom Notes -->
             <div class="form-group">
-              <label for="donorProgram">Direct Gift To</label>
+              <label for="donorAmount">Donation Amount / Value (GHS or USD)</label>
               <div class="input-icon-group">
-                <i class="fas fa-heart"></i>
-                <select id="donorProgram" name="program" aria-label="Direct Gift To">
-                  <option value="General Needs & Urgent Relief">General Needs & Urgent Relief</option>
-                  <option value="Educational Support & Scholarships">Educational Support & Scholarships</option>
-                  <option value="Community Healthcare Services">Community Healthcare Services</option>
-                  <option value="Youth & Women Empowerment">Youth & Women Empowerment</option>
-                </select>
+                <i class="fas fa-coins"></i>
+                <input type="text" id="donorAmount" name="amount" value="GH₵ 100" placeholder="e.g. GH₵ 100 or $50"
+                  aria-label="Donation Amount">
               </div>
             </div>
-          </div>
 
-          <!-- Specific Amount / Custom Notes -->
-          <div class="form-group">
-            <label for="donorAmount">Donation Amount / Value (GHS or USD)</label>
-            <div class="input-icon-group">
-              <i class="fas fa-coins"></i>
-              <input type="text" id="donorAmount" name="amount" value="GH₵ 100" placeholder="e.g. GH₵ 100 or $50" aria-label="Donation Amount">
+            <!-- Message / Note -->
+            <div class="form-group">
+              <label for="donorMessage">Message or Special Instructions *</label>
+              <div class="textarea-icon-group">
+                <i class="fas fa-comment-alt"></i>
+                <textarea id="donorMessage" name="message" rows="4"
+                  placeholder="Let us know if you have already transferred via ECOBANK, or need instructions for Mobile Money (MoMo)..."
+                  required aria-label="Message"></textarea>
+              </div>
             </div>
-          </div>
 
-          <!-- Message / Note -->
-          <div class="form-group">
-            <label for="donorMessage">Message or Special Instructions *</label>
-            <div class="textarea-icon-group">
-              <i class="fas fa-comment-alt"></i>
-              <textarea id="donorMessage" name="message" rows="4" placeholder="Let us know if you have already transferred via ECOBANK, or need instructions for Mobile Money (MoMo)..." required aria-label="Message"></textarea>
+            <!-- Submit Button -->
+            <div style="text-align: center; margin-top: var(--space-4);">
+              <button type="submit" class="btn btn-lg" style="width: 100%; justify-content: center;">
+                <i class="fas fa-heart"></i> Submit Donation Inquiry
+              </button>
             </div>
-          </div>
 
-          <!-- Submit Button -->
-          <div style="text-align: center; margin-top: var(--space-4);">
-            <button type="submit" class="btn btn-lg" style="width: 100%; justify-content: center;">
-              <i class="fas fa-heart"></i> Submit Donation Inquiry
-            </button>
-          </div>
+            <div class="trust-badge-container">
+              <i class="fas fa-shield-alt"></i>
+              <span>IMIC International Organization is a registered Non-Governmental Organization (LBG). All funds
+                directly benefit community programs in Ghana.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
-          <div class="trust-badge-container">
-            <i class="fas fa-shield-alt"></i>
-            <span>IMIC International Organization is a registered Non-Governmental Organization (LBG). All funds directly benefit community programs in Ghana.</span>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid-modern">
+        <div class="footer-brand">
+          <img src="./logo-white.png" alt="IMIC Logo">
+          <p>Empowering individuals and families to achieve lasting independence through education, skills training, and
+            community support.</p>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Julikart, Gbawe (Behind the Victory Baptist
+              Church)</p>
+            <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+233543123416">+233 543 123 416</a></p>
+            <p><i class="fas fa-envelope" aria-hidden="true"></i> <a
+                href="mailto:imicinternationalorganization@gmail.com">imicinternationalorganization@gmail.com</a></p>
           </div>
-        </form>
+        </div>
+        <div class="footer-col">
+          <h4>Organization</h4><a href="about.html">About Us</a><a href="impact.html">Our Mission</a><a
+            href="index.html">Annual Reports</a><a href="contact.html">Careers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4><a href="programs.html">Educational Support</a><a href="programs.html">Community Relief</a><a
+            href="programs.html">Healthcare Support</a><a href="programs.html">Youth Empowerment</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get Involved</h4><a href="donate.html">Donate</a><a href="contact.html">Volunteer</a><a
+            href="contact.html">Partner With Us</a><a href="donate.html">Events</a>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Connected</h4>
+          <p>Subscribe for updates and impact stories.</p>
+          <div class="newsletter-form"><input type="email" placeholder="Enter your email" id="newsEmail"><button
+              id="subscribeBtn">Subscribe</button></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© <span id="year"></span> IMIC International Organization. All rights reserved.</div>
       </div>
     </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid-modern">
-      <div class="footer-brand">
-        <img src="./logo-white.png" alt="IMIC Logo">
-        <p>Empowering individuals and families to achieve lasting independence through education, skills training, and community support.</p>
-      </div>
-      <div class="footer-col"><h4>Organization</h4><a href="about.html">About Us</a><a href="impact.html">Our Mission</a><a href="index.html">Annual Reports</a><a href="contact.html">Careers</a></div>
-      <div class="footer-col"><h4>Programs</h4><a href="programs.html">Educational Support</a><a href="programs.html">Community Relief</a><a href="programs.html">Healthcare Support</a><a href="programs.html">Youth Empowerment</a></div>
-      <div class="footer-col"><h4>Get Involved</h4><a href="donate.html">Donate</a><a href="contact.html">Volunteer</a><a href="contact.html">Partner With Us</a><a href="donate.html">Events</a></div>
-      <div class="footer-newsletter"><h4>Stay Connected</h4><p>Subscribe for updates and impact stories.</p><div class="newsletter-form"><input type="email" placeholder="Enter your email" id="newsEmail"><button id="subscribeBtn">Subscribe</button></div></div>
-    </div>
-    <div class="footer-bottom"><div>© <span id="year"></span> IMIC International Organization. All rights reserved.</div></div>
-  </div>
-</footer>
-<script src="./script.js"></script>
+  </footer>
+  <script src="./script.js"></script>
 </body>
+
 </html>
