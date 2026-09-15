@@ -3,95 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="IMIC impact page — discover the measurable outcomes and stories behind our programs." />
+  <meta name="description" content="IMIC impact — discover the measurable outcomes and stories behind our community programs in Ghana." />
   <title>IMIC | Impact</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-<header class="navbar">
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header class="navbar" role="banner">
   <div class="container nav-container">
     <div class="logo">
-      <a href="index.html"><img src="./logo-full-colour.png" alt="IMIC Logo"></a>
+      <a href="index.html" aria-label="IMIC International — Home">
+        <img src="./logo-full-colour.png" alt="IMIC International Organization" width="180" height="48">
+      </a>
     </div>
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
-    <div class="nav-links" id="navLinks">
+    <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">
+      <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+    <nav class="nav-links" id="navLinks" role="navigation" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="programs.html">Programs</a>
       <a href="impact.html">Impact</a>
       <a href="contact.html">Contact</a>
       <a href="about.html">About Us</a>
       <a href="donate.html" class="donate-nav">Donate</a>
-    </div>
+    </nav>
   </div>
 </header>
-<main>
-  <section class="hero" style="background-image: linear-gradient(135deg, rgba(15,38,41,0.75) 0%, rgba(21,88,86,0.85) 100%), url('https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg');">
+
+<main id="main-content">
+  <section class="hero hero--impact" aria-labelledby="hero-heading">
     <div class="container hero-grid" data-reveal>
       <div class="hero-content">
         <div class="badge">Impact</div>
-        <h1>Real Results, Measured Progress</h1>
-        <p>We track our outcomes so every investment in IMIC creates real benefit for the people and places we serve.</p>
+        <h1 id="hero-heading">Real Results, Measured Progress</h1>
+        <p class="hero-lead">We track our outcomes so every investment in IMIC creates real benefit for the people and places we serve across Ghana.</p>
         <div class="hero-buttons">
-          <a href="donate.html" class="btn">Support Impact <i class="fas fa-arrow-right"></i></a>
-          <a href="programs.html" class="btn btn-outline" style="background: rgba(255,255,255,0.15); border-color: white; color: white;">See Programs</a>
+          <a href="donate.html" class="btn btn-lg">Support Our Impact <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          <a href="programs.html" class="btn btn-outline-light btn-lg">See Our Programs</a>
         </div>
       </div>
       <div class="hero-stat">
-        <div class="stat-number counter" data-target="12000" data-suffix="+">0</div>
-        <div class="stat-label">Lives changed</div>
+        <div class="stat-number counter" data-target="3500" data-suffix="+">0</div>
+        <div class="stat-label">Individuals supported</div>
         <div class="stat-desc">Through our programs and partnerships.</div>
       </div>
     </div>
   </section>
-  <section class="section impact-stats">
+
+  <section class="section impact-stats" aria-labelledby="progress-heading">
     <div class="container" data-reveal>
-      <div class="badge">Measured change</div>
-      <h2 class="section-title">Progress That Matters</h2>
-      <p class="section-sub">Our impact is built on accountability, data, and stories from the people we serve.</p>
+      <div class="section-header">
+        <div class="badge">Measured change</div>
+        <h2 id="progress-heading" class="section-title">Progress That Matters</h2>
+        <p class="section-sub">Our impact is built on accountability, data, and stories from the people we serve.</p>
+      </div>
       <div class="stats-container">
-        <div class="stat-block"><div class="stat-main counter" data-target="12000" data-suffix="+">0</div><div>Lives Changed</div><small>Individuals served since inception</small></div>
-        <div class="stat-block"><div class="stat-main counter" data-target="87" data-suffix="%">0</div><div>Success Rate</div><small>Achieve self-reliance goals</small></div>
-        <div class="stat-block"><div class="stat-main counter" data-target="45" data-suffix="+">0</div><div>Community Partners</div><small>Organizations working with us</small></div>
-        <div class="stat-block"><div class="stat-main">$2.4M</div><div>Annual investment</div><small>In community support</small></div>
+        <div class="stat-block"><div class="stat-main counter" data-target="3500" data-suffix="+">0</div><div>Individuals Supported</div><small>Across education, health, and livelihood programs</small></div>
+        <div class="stat-block"><div class="stat-main counter" data-target="8">0</div><div>Program Areas</div><small>Active initiatives across Ghana</small></div>
+        <div class="stat-block"><div class="stat-main counter" data-target="45" data-suffix="+">0</div><div>Community Partners</div><small>Local organizations working alongside us</small></div>
+        <div class="stat-block"><div class="stat-main counter" data-target="18" data-suffix=" yrs">0</div><div>Years of Service</div><small>Committed to long-term community support</small></div>
       </div>
       <div class="impact-note">
-        <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto;">Every number represents a story of resilience, access, and progress. We measure success by the lives strengthened, not just by statistics.</p>
+        <p>Every number represents a story of resilience, access, and progress. We measure success by the lives strengthened, not just by statistics.</p>
       </div>
     </div>
   </section>
-  <section class="section programs">
+
+  <section class="section programs" aria-labelledby="stories-heading">
     <div class="container" data-reveal>
-      <div class="badge">Stories</div>
-      <h2 class="section-title">Impact Stories</h2>
-      <p class="section-sub">Short journeys from challenge to change across education, health, and livelihoods.</p>
+      <div class="section-header">
+        <div class="badge">Stories</div>
+        <h2 id="stories-heading" class="section-title">Impact Stories</h2>
+        <p class="section-sub">Short journeys from challenge to change across education, health, and livelihoods.</p>
+      </div>
       <div class="programs-grid">
-        <div class="program-card"><i class="fas fa-book-reader"></i><h4>School Success</h4><p>Scholarship recipients are returning to class with confidence and renewed hope.</p></div>
-        <div class="program-card"><i class="fas fa-heartbeat"></i><h4>Healthy Families</h4><p>Community health outreach has expanded access to care for rural households.</p></div>
-        <div class="program-card"><i class="fas fa-hand-holding-seedling"></i><h4>Sustainable Farming</h4><p>Farmers are increasing yields and earning stable incomes with better training.</p></div>
-        <div class="program-card"><i class="fas fa-users"></i><h4>Empowered Youth</h4><p>Young leaders are organizing projects that benefit their neighborhoods.</p></div>
+        <article class="program-card">
+          <div class="card-icon" aria-hidden="true"><i class="fas fa-book-reader"></i></div>
+          <h4>School Success</h4>
+          <p>Scholarship recipients are returning to class with confidence and renewed hope for their futures.</p>
+        </article>
+        <article class="program-card">
+          <div class="card-icon" aria-hidden="true"><i class="fas fa-heartbeat"></i></div>
+          <h4>Healthy Families</h4>
+          <p>Community health outreach has expanded access to care for rural households across our service areas.</p>
+        </article>
+        <article class="program-card">
+          <div class="card-icon" aria-hidden="true"><i class="fas fa-hand-holding-seedling"></i></div>
+          <h4>Sustainable Farming</h4>
+          <p>Farmers are increasing yields and earning stable incomes through improved training and inputs.</p>
+        </article>
+        <article class="program-card">
+          <div class="card-icon" aria-hidden="true"><i class="fas fa-users"></i></div>
+          <h4>Empowered Youth</h4>
+          <p>Young leaders are organizing projects that benefit their neighborhoods and inspire their peers.</p>
+        </article>
       </div>
     </div>
   </section>
 </main>
-<footer class="site-footer">
+
+<footer class="site-footer" role="contentinfo">
   <div class="container">
     <div class="footer-grid-modern">
       <div class="footer-brand">
-        <img src="./logo-white.png" alt="IMIC Logo">
+        <img src="./logo-white.png" alt="IMIC International Organization" width="180" height="48" loading="lazy">
         <p>Empowering individuals and families to achieve lasting independence through education, skills training, and community support.</p>
       </div>
-      <div class="footer-col"><h4>Organization</h4><a href="about.html">About Us</a><a href="impact.html">Our Mission</a><a href="index.html">Annual Reports</a><a href="contact.html">Careers</a></div>
+      <div class="footer-col"><h4>Organization</h4><a href="about.html">About Us</a><a href="impact.html">Our Impact</a><a href="about.html">Our Mission</a><a href="contact.html">Contact Us</a></div>
       <div class="footer-col"><h4>Programs</h4><a href="programs.html">Educational Support</a><a href="programs.html">Community Relief</a><a href="programs.html">Healthcare Support</a><a href="programs.html">Youth Empowerment</a></div>
-      <div class="footer-col"><h4>Get Involved</h4><a href="donate.html">Donate</a><a href="contact.html">Volunteer</a><a href="contact.html">Partner With Us</a><a href="donate.html">Events</a></div>
-      <div class="footer-newsletter"><h4>Stay Connected</h4><p>Subscribe for updates and impact stories.</p><div class="newsletter-form"><input type="email" placeholder="Enter your email" id="newsEmail"><button id="subscribeBtn">Subscribe</button></div></div>
+      <div class="footer-col"><h4>Get Involved</h4><a href="donate.html">Donate</a><a href="contact.html">Volunteer With Us</a><a href="contact.html">Partner With IMIC</a><a href="donate.html">Support a Community</a></div>
+      <div class="footer-newsletter"><h4>Stay Connected</h4><p>Subscribe for updates and impact stories.</p><div class="newsletter-form"><label for="newsEmail" class="sr-only">Email address</label><input type="email" id="newsEmail" placeholder="Enter your email" autocomplete="email" required><button type="button" id="subscribeBtn">Subscribe</button></div></div>
     </div>
     <div class="footer-bottom"><div>© <span id="year"></span> IMIC International Organization. All rights reserved.</div></div>
   </div>
 </footer>
-<script src="./script.js"></script>
+<script src="./script.js" defer></script>
 </body>
 </html>

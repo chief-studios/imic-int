@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="description" content="Contact IMIC International Organization — reach out for partnership, volunteering, or general inquiries." />
-  <title>IMIC | Contact</title>
+  <title>IMIC | Contact Us</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -22,59 +22,255 @@
       <a href="index.html">Home</a>
       <a href="programs.html">Programs</a>
       <a href="impact.html">Impact</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" aria-current="page">Contact</a>
       <a href="about.html">About Us</a>
       <a href="donate.html" class="donate-nav">Donate</a>
     </div>
   </div>
 </header>
 <main>
-  <section class="hero" style="background-image: linear-gradient(135deg, rgba(15,38,41,0.75) 0%, rgba(21,88,86,0.85) 100%), url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg');">
+  <!-- HERO -->
+  <section class="hero hero--contact">
     <div class="container hero-grid" data-reveal>
       <div class="hero-content">
         <div class="badge">Get in touch</div>
-        <h1>Contact IMIC</h1>
-        <p>Whether you want to volunteer, partner, or learn more, we are ready to listen and collaborate.</p>
+        <h1>Contact IMIC International</h1>
+        <p>Whether you want to volunteer, partner, support our community programs, or ask a question, we are ready to listen and collaborate.</p>
         <div class="hero-buttons">
-          <a href="mailto:imicinternationalorganization@gmail.com" class="btn">Email Us <i class="fas fa-envelope"></i></a>
-          <a href="donate.html" class="btn btn-outline" style="background: rgba(255,255,255,0.15); border-color: white; color: white;">Donate</a>
+          <a href="#contact-form" class="btn btn-lg">Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i></a>
+          <a href="tel:+233543123416" class="btn btn-outline-light btn-lg"><i class="fas fa-phone"></i> Call Us Directly</a>
         </div>
       </div>
       <div class="hero-stat">
-        <div class="stat-number">+233</div>
-        <div class="stat-label">Contact line</div>
-        <div class="stat-desc">Reach us for partnership, support, and volunteer coordination.</div>
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">Open Community Door</div>
+        <div class="stat-desc">Prompt responses to all partnership, support, and community inquiries.</div>
       </div>
     </div>
   </section>
+
+  <!-- CONTACT INFO CARDS -->
   <section class="section approach">
     <div class="container" data-reveal>
-      <div class="badge">Reach us</div>
-      <h2 class="section-title">Contact Information</h2>
-      <p class="section-sub">We’re happy to answer questions, discuss partnerships, and coordinate support.</p>
-      <div class="approach-grid">
-        <div class="approach-card"><i class="fas fa-map-marker-alt"></i><h3>Office</h3><p>GA-482-7099, Mempeasem, Ghana</p></div>
-        <div class="approach-card"><i class="fas fa-phone-alt"></i><h3>Phone</h3><p>+233 24 029 8271<br>+233 24 499 4544</p></div>
-        <div class="approach-card"><i class="fas fa-envelope"></i><h3>Email</h3><p>imicinternationalorganization@gmail.com</p></div>
-        <div class="approach-card"><i class="fas fa-clock"></i><h3>Office hours</h3><p>Mon–Fri, 9:00 AM – 5:00 PM GMT</p></div>
+      <div class="badge">Reach us directly</div>
+      <h2 class="section-title">Our Contact Channels</h2>
+      <p class="section-sub">We’re happy to answer questions, discuss organizational partnerships, and coordinate local community support.</p>
+
+      <div class="donation-details-grid">
+        <!-- Office Location Card -->
+        <div class="donate-detail-card donate-detail-card--highlight">
+          <div class="donate-card-header">
+            <div class="donate-card-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="donate-card-title">
+              <span>Main Location</span>
+              <h3>Headquarters</h3>
+            </div>
+          </div>
+          <div class="donate-card-body">
+            <div class="detail-row">
+              <span class="detail-label">Primary Address</span>
+              <span class="detail-value">GA-482-7099, Mempeasem, Ghana</span>
+            </div>
+            <div class="detail-row" style="margin-top: 6px;">
+              <span class="detail-label">Secondary / Local Office</span>
+              <span class="detail-value">Julikart, Bawe (Behind Victory Baptist Church)</span>
+            </div>
+          </div>
+          <div class="donate-card-actions">
+            <button type="button" class="btn-copy" data-copy="GA-482-7099, Mempeasem, Ghana">
+              <i class="far fa-copy"></i> Copy Address
+            </button>
+          </div>
+        </div>
+
+        <!-- Phone Lines Card -->
+        <div class="donate-detail-card">
+          <div class="donate-card-header">
+            <div class="donate-card-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="donate-card-title">
+              <span>Direct Lines</span>
+              <h3>Phone & WhatsApp</h3>
+            </div>
+          </div>
+          <div class="donate-card-body">
+            <div class="detail-row">
+              <span class="detail-label">Primary Contact</span>
+              <span class="detail-value detail-value--highlight">+233 54 312 3416</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Additional Support Lines</span>
+              <span class="detail-value">+233 24 029 8271</span>
+              <span class="detail-value">+233 24 499 4544</span>
+            </div>
+          </div>
+          <div class="donate-card-actions">
+            <a href="tel:+233543123416" class="btn btn-sm btn-outline"><i class="fas fa-phone"></i> Call</a>
+            <a href="https://wa.me/233543123416" target="_blank" rel="noopener" class="btn-outline-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <button type="button" class="btn-copy" data-copy="+233543123416">
+              <i class="far fa-copy"></i> Copy
+            </button>
+          </div>
+        </div>
+
+        <!-- Email & Inquiries Card -->
+        <div class="donate-detail-card">
+          <div class="donate-card-header">
+            <div class="donate-card-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="donate-card-title">
+              <span>Electronic Mail</span>
+              <h3>Official Email</h3>
+            </div>
+          </div>
+          <div class="donate-card-body">
+            <div class="detail-row">
+              <span class="detail-label">General & Partnership Email</span>
+              <span class="detail-value detail-value--highlight" style="font-size: 0.9rem;">imicinternationalorganization@gmail.com</span>
+            </div>
+            <div class="detail-row" style="margin-top: 6px;">
+              <span class="detail-label">Response Time</span>
+              <span class="detail-value">Within 24 Business Hours</span>
+            </div>
+          </div>
+          <div class="donate-card-actions">
+            <a href="mailto:imicinternationalorganization@gmail.com" class="btn btn-sm btn-outline"><i class="fas fa-envelope"></i> Email Us</a>
+            <button type="button" class="btn-copy" data-copy="imicinternationalorganization@gmail.com">
+              <i class="far fa-copy"></i> Copy Email
+            </button>
+          </div>
+        </div>
+
+        <!-- Office Hours Card -->
+        <div class="donate-detail-card">
+          <div class="donate-card-header">
+            <div class="donate-card-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="donate-card-title">
+              <span>Availability</span>
+              <h3>Office Hours</h3>
+            </div>
+          </div>
+          <div class="donate-card-body">
+            <div class="detail-row">
+              <span class="detail-label">Monday – Friday</span>
+              <span class="detail-value">9:00 AM – 5:00 PM GMT</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Saturday – Sunday</span>
+              <span class="detail-value">Closed (Emergency / Appointment Only)</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <section class="section programs">
+
+  <!-- ENHANCED CONTACT FORM SECTION -->
+  <section id="contact-form" class="section programs">
     <div class="container" data-reveal>
       <div class="badge">Send a message</div>
-      <h2 class="section-title">Reach Out Directly</h2>
-      <p class="section-sub">Fill out the form below and our team will respond shortly.</p>
-      <div class="contact-form" style="max-width: 900px; margin: 0 auto; display: grid; gap: 20px;">
-        <input type="text" placeholder="Your name" aria-label="Your name">
-        <input type="email" placeholder="Your email" aria-label="Your email">
-        <input type="text" placeholder="Subject" aria-label="Subject">
-        <textarea rows="6" placeholder="Your message"></textarea>
-        <button class="btn">Send Message</button>
+      <h2 class="section-title text-center" style="text-align: center;">Reach Out Directly</h2>
+      <p class="section-sub section-sub--centered">Fill out the form below and our team will get back to you promptly.</p>
+
+      <div class="donate-form-card">
+        <!-- Topic Selection Pills -->
+        <div class="contact-topic-toggle" id="contactTopicToggle">
+          <button type="button" class="topic-btn active" data-topic="General Inquiry">General Inquiry</button>
+          <button type="button" class="topic-btn" data-topic="Volunteering">Volunteering</button>
+          <button type="button" class="topic-btn" data-topic="Partnership">Partnership</button>
+          <button type="button" class="topic-btn" data-topic="Media / Press">Media / Press</button>
+        </div>
+
+        <form class="contact-form donate-form" id="mainContactForm" data-subject="IMIC Website Inquiry">
+          <input type="hidden" id="selectedTopic" name="topic" value="General Inquiry">
+
+          <div class="form-grid-2col">
+            <!-- Full Name -->
+            <div class="form-group">
+              <label for="contactName">Your Name *</label>
+              <div class="input-icon-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="contactName" name="name" placeholder="John Doe" required aria-label="Your Name">
+              </div>
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group">
+              <label for="contactEmail">Email Address *</label>
+              <div class="input-icon-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="contactEmail" name="email" placeholder="john@example.com" required aria-label="Email Address">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-grid-2col">
+            <!-- Phone Number -->
+            <div class="form-group">
+              <label for="contactPhone">Phone Number / WhatsApp</label>
+              <div class="input-icon-group">
+                <i class="fas fa-phone"></i>
+                <input type="tel" id="contactPhone" name="phone" placeholder="+233 54 123 4567" aria-label="Phone Number">
+              </div>
+            </div>
+
+            <!-- Subject Category -->
+            <div class="form-group">
+              <label for="contactCategory">Inquiry Category</label>
+              <div class="input-icon-group">
+                <i class="fas fa-list"></i>
+                <select id="contactCategory" name="program" aria-label="Inquiry Category">
+                  <option value="General Information">General Information</option>
+                  <option value="Partnership & Sponsorship">Partnership & Sponsorship</option>
+                  <option value="Volunteer Opportunities">Volunteer Opportunities</option>
+                  <option value="Program & Community Support">Program & Community Support</option>
+                  <option value="Press & Media Inquiries">Press & Media Inquiries</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Subject Line -->
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <div class="input-icon-group">
+              <i class="fas fa-heading"></i>
+              <input type="text" id="contactSubject" name="subject" placeholder="How can we help you?" aria-label="Subject">
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label for="contactMessage">Your Message *</label>
+            <div class="textarea-icon-group">
+              <i class="fas fa-comment-alt"></i>
+              <textarea id="contactMessage" name="message" rows="5" placeholder="Share your inquiry, partnership proposal, or question with our team..." required aria-label="Your Message"></textarea>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div style="text-align: center; margin-top: var(--space-4);">
+            <button type="submit" class="btn btn-lg" style="width: 100%; justify-content: center;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </div>
+
+          <div class="trust-badge-container">
+            <i class="fas fa-shield-alt"></i>
+            <span>IMIC International Organization respects your privacy. Your information will only be used to respond to your inquiry.</span>
+          </div>
+        </form>
       </div>
     </div>
   </section>
 </main>
+
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid-modern">
